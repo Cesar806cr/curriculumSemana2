@@ -1,49 +1,40 @@
  /* Estilos de la tabla: collapse y nth-child */
-    table {
-        width: 100%;
-        border-collapse: collapse; /* colapsar bordes */
-    }
+    h1 {
+            font-size: 2rem;
+            margin-bottom: 1em;
+        }
+        
+        /* Agregar color y alinear los th y td */
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
 
-    /* fila alterna con nth-child */
-    tbody tr:nth-child(odd) {
-        background: #fcfcfd;
-    }
+        p {
+            color: rgb(0,128,255);
+        }
 
-    tbody tr:nth-child(even) {
-        background: #f1f5f9;
-    }
+        .p-email {
+            color: #ff5733;
+        }
+        #p-disponibilidad {
+            font-weight: bold;
+        }
 
-    /* hover en fila */
-    tbody tr:hover {
-        background: #ffe9d6; /* color al pasar con mouse*/
-    }
+        div p{
+            color: blueviolet;
+        }
 
-    /* td:hover para interacción */
-    td:hover {
-        background: rgba(255,87,51,0.08); /* uso de rgba */
-    }
+        td:hover {
+            background-color: saddlebrown;
+            cursor: pointer;
+        }
 
-    /* pequeño pie de tabla */
-    tfoot td {
-        font-size: 0.9rem;
-        padding: 0.6rem;
-    }
+        tbody > tr:hover {
+            background-color: wheat;
+        }
 
-    /* clase destacado */
-    .destacado {
-        font-weight: 700;
-        color: #2b2b2b;
-    }
-
-    /* selector descendiente para párrafos dentro de .contacto */
-    .contacto p {
-        margin: 0.3rem 0;
-    }
-
-    /* selector de etiqueta para citas largas */
-    blockquote {
-        border-left: 4px solid #ff5733; /* color por HEX */
-        padding: 0.5rem 1rem;
-        margin: 1rem 0;
-        background: #fff7f2;
-    }
+        tbody tr:nth-child(odd) {
+            background-color: #e8f4fc;
+        }
