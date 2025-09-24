@@ -1,0 +1,49 @@
+ /* Table styles: collapse y nth-child */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* colapsar bordes */
+    }
+
+    /* fila alterna con nth-child */
+    tbody tr:nth-child(odd) {
+        background: #fcfcfd;
+    }
+
+    tbody tr:nth-child(even) {
+        background: #f1f5f9;
+    }
+
+    /* hover en fila */
+    tbody tr:hover {
+        background: #ffe9d6; /* color al pasar con mouse*/
+    }
+
+    /* td:hover para interacción */
+    td:hover {
+        background: rgba(255,87,51,0.08); /* uso de rgba */
+    }
+
+    /* pequeño pie de tabla */
+    tfoot td {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    /* clase destacado */
+    .destacado {
+        font-weight: 700;
+        color: #2b2b2b;
+    }
+
+    /* selector descendiente para párrafos dentro de .contacto */
+    .contacto p {
+        margin: 0.3rem 0;
+    }
+
+    /* selector de etiqueta para citas largas */
+    blockquote {
+        border-left: 4px solid #ff5733; /* color por HEX */
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        background: #fff7f2;
+    }

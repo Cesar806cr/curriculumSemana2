@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>César Valenciano</title>
+<!-- enlace a archivo CSS externo  -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+    
+
+    /* Selector de etiqueta */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background: #f7f9fb; /* color por HEX en CSS interno */
+    }
+
+    /* Selector de id */
+    #encabezado {
+        text-align: center;
+        padding: 2rem 1rem; /* uso de rem */
+        background: rgb(0,128,255); /* color por RGB */
+        color: white;
+    }
+
+    /* Selector descendiente */
+    header h1 {
+        margin: 0;
+    }
+
+    /* Selector del hijo */
+    nav > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Selectores de interacción */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilos para la sección principal (modelo de caja: margin, padding, border, width/height) */
+    .contenido {
+        max-width: 900px; /* uso de px */
+        margin: 1.5rem auto; /* centrar con margin (unit: rem) */
+        padding: 20px; /* px */
+        border: 2px solid #dee2e6; /* border con HEX */
+        border-radius: 12px;
+        background: white;
+        box-sizing: border-box; /* afectando el modelo de caja */
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Currículum de César Valenciano</h1>
+        <h2 style="color:green;">Desarrollador Web </h2>
+        <nav>
+            <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#formacion">Formacion</a></li>
+            <li><a href="#contacto">Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <main class="contenido">
+        <section id="perfil">
+            <h3>Perfil profesional</h3>
+            <p>
+                Ingeniero de software con interés en desarrollo web y metodologías ágiles. Manejo de
+                <em>Java, y C#</em>, y experiencia en proyectos educativos y personales.<br>
+                En busca de oportunidades donde aplicar mis <strong>Habilidades</strong> en diseño y pruebas de software. <small>Disponibilidad para trabajar presencial o remoto.</small>
+            </p>
+
+            <hr>
+
+            <blockquote>
+                "La calidad del software se refleja en la satisfacción del usuario".
+            </blockquote>
+
+            <p>Una frase para recordar:  <q>La educación es el arma más poderosa que puedes usar para cambiar el mundo.</q> - Nelson Mandela</p>
+        </section>
+
+        <section id="experiencia">
+            <h3>Experiencia laboral</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Empresa / Institución</th>
+                        <th>Rol</th>
+                        <th>Responsabilidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>Empresa Personal</td>
+                        <td>Desarrollador Junior</td>
+                        <td>Desarrollo de módulos backend y soporte de integración.</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td rowspan="2">Proyecto Universitario</td>
+                        <td>Líder de proyecto</td>
+                        <td>Coordinación de tareas y gestión de equipo.<br><small>Trabajo en equipo.</small></td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Desarrollador</td>
+                        <td colspan="1">Implementación de documentación técnica e Interfaces de usuario.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total: 3 años (experiencia profesional y académica)</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr>
+        </section>
+
+        <section id="formacion">
+            <h3>Formación académica</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Centro</th>
+                        <th>Título / Curso</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023 - 2025</td>
+                        <td>Universidad Técnica Nacional</td>
+                        <td>Ingeniería del Software</td>
+                        <td>Cursando - Sede Central</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Información verificada: UTN — Curso: ISW-512 — Año: 2025 — Ciclo lectivo: III</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+     <section id="contacto" class="contacto">
+            <h3>Información de Contacto</h3>
+            <p>Correo: <i>cesar.valenciano07@gmail.com</i></p>
+            <p><ins>Disponible para entrevistas desde septiembre 2025</ins> <sub> (zona: Costa Rica)</sub></p>
+            <p>Nota: referencias disponibles bajo solicitud<sup>*</sup>.</p>
+
+            <hr>
+
+            <h4>Habilidades</h4>
+            <ul>
+                <li class="destacado">Programación orientada a objetos</li>
+                <li>Desarrollo web</li>
+                <li>Metodologías ágiles</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
