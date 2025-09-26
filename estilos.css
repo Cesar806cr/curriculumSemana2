@@ -27,13 +27,15 @@
         }
 
         td:hover {
-            background-color: saddlebrown;
+            background-color: rgb(139, 19, 129);
             cursor: pointer;
         }
+        
 
         tbody > tr:hover {
             background-color: wheat;
         }
+        /* Alternar colores en las filas de la tabla */
 
         tbody tr:nth-child(odd) {
             background-color: #e8f4fc;
