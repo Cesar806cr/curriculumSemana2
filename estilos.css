@@ -1,43 +1,51 @@
  /* Estilos de la tabla: collapse y nth-child */
-    h1 {
-            font-size: 2rem;
-            margin-bottom: 1em;
-        }
-        
-        /* Agregar color y alinear los th y td */
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
+  /* --- Estilos de tablas en el currículum --- */
 
-        p {
-            color: rgba(144, 0, 255, 0.297);
-        }
+/* Selector de etiqueta */
+table {
+    width: 100%; /* % */
+    border-collapse: collapse; /* requerido */
+    margin: 1.5rem 0; /* rem */
+    font-size: 0.95em; /* em */
+}
 
-        .contacto i {
-            color: #ff5733;
-        }
-        #p-disponibilidad {
-            font-weight: bold;
-        }
-        
+/* Selector descendiente: los th dentro de thead */
+thead th {
+    background-color: rgb(0,128,255); /* color por RGB */
+    color: white;
+    padding: 10px; /* px */
+    border: 2px solid #dee2e6; /* HEX */
+}
 
-        div p{
-            color: black;
-        }
+/* Selector descendiente: celdas dentro del tbody */
+tbody td {
+    border: 1px solid #dee2e6; /* HEX */
+    padding: 8px;
+    text-align: center;
+    color: #333; /* texto gris */
+}
 
-        td:hover {
-            background-color: rgb(139, 19, 129);
-            cursor: pointer;
-        }
-        
+/* nth-child para alternar filas */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-        tbody > tr:hover {
-            background-color: wheat;
-        }
-        /* Alternar colores en las filas de la tabla */
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
 
-        tbody tr:nth-child(odd) {
-            background-color: #e8f4fc;
-        }
+/* Hover sobre fila */
+tbody tr:hover {
+    background-color: #ff5733; /* color HEX requerido */
+    color: white;
+}
+
+/* Pie de tabla */
+tfoot td {
+    font-weight: bold;
+    text-align: center;
+    background: red; /* color por nombre */
+    color: white;
+    padding: 10px;
+}
+
