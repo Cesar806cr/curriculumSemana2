@@ -11,11 +11,16 @@
             text-align: center;
         }
 
+        /* texto general en negro */
+body {
+    color: black;
+}
+
         p {
             color: rgba(144, 0, 255, 0.297);
         }
 
-        .p-email {
+        .contacto {
             color: #ff5733;
         }
         #p-disponibilidad {
