@@ -12,7 +12,7 @@
         }
 
         p {
-            color: rgb(0,128,255);
+            color: rgba(144, 0, 255, 0.297);
         }
 
         .p-email {
@@ -21,6 +21,7 @@
         #p-disponibilidad {
             font-weight: bold;
         }
+        
 
         div p{
             color: blueviolet;
